@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed';
+}
+
+
+body {
+    background: hsl(210, 46%, 95%);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    margin: 30px;
+    width: 1120px;
+    min-height: 560px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "person-1 person-1 person-2 person-3"
+    "person-4 person-5 person-5 person-3";
+    gap: 25px;
+}
+
+
+.person-1 {
+    background: hsl(263, 55%, 52%);
+    grid-area: person-1;
+    border-radius: 10px;
+    padding: 30px;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 360px 0;
+    background-size: 110px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+
+.photo-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+
+.photo-name img {
+    border-radius: 50%;
+    width: 30px;
+    border: 1px solid hsl(210, 46%, 95%);
+}
+
+
+.title-white h4 {
+    font-size: 13px;
+    color: hsl(0, 0%, 81%);
+    margin-bottom: 2px;
+    font-weight: 500;
+}
+
+
+.title-white h6 {
+    font-weight: 200;
+    font-size: 11px;
+    color: hsl(0, 0%, 81%);
+}
+
+
+
+.person-1 h3 {
+    color: white;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+
+.person-1 p {
+    font-size: 14px;
+    font-weight: 200;
+    color: hsl(0, 0%, 81%);
+}
+
+
+.person-2 {
+    background: hsl(217, 19%, 35%);
+    grid-area: person-2;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+
+.person-2 h3 {
+    color: white;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+
+.person-2 p {
+    font-size: 14px;
+    font-weight: 200;
+    color: hsl(0, 0%, 81%);
+}
+
+
+
+
+.person-3 {
+    background: white;
+    grid-area: person-3;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+
+
+.person-3 h3 {
+    color: hsl(219, 29%, 14%);
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+
+.person-3 p {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(217, 19%, 35%);
+}
+
+
+
+.title-black h4 {
+    font-size: 13px;
+    color: hsl(217, 19%, 35%);
+    margin-bottom: 2px;
+    font-weight: 500;
+}
+
+
+.title-black h6 {
+    font-weight: 200;
+    font-size: 11px;
+    color: hsl(217, 19%, 35%);
+}
+
+
+.person-4 {
+    background: white;
+    grid-area: person-4;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+
+.person-4 h3 {
+    color: hsl(219, 29%, 14%);
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+
+.person-4 p {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(217, 19%, 35%);
+}
+
+.person-5 {
+    background: hsl(219, 29%, 14%);
+    grid-area: person-5;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+
+.person-5 h3 {
+    color: white;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+
+.person-5 p {
+    font-size: 14px;
+    font-weight: 200;
+    color: hsl(0, 0%, 81%);
+}
+
+
+@media screen and (max-width: 900px) {
+    .container {
+        margin: 30px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr 0.5fr 0.8fr 1fr;
+        grid-template-areas: 
+        "person-1"
+        "person-2"
+        "person-4"
+        "person-5"
+        "person-3";
+    }
+}
+
+
+
+
+
+
+{}
